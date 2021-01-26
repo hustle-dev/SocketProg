@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hello_server.c">
+    <ClCompile Include="tcp_server_win.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_client_win.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
