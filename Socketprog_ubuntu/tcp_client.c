@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
 {
     int sock;
     struct sockaddr_in serv_addr;
-    char message[30];
+    char message[1000];
     int str_len=0;
     int idx=0, read_len = 0;
 
@@ -32,13 +32,13 @@ int main(int argc, char* argv[])
         if(connect(sock, (struct sockaddr*)&serv_addr, sizeof(serv_addr)) == -1)
             error_handling("connect() error!");
 
-        while(read_len=read(sock, &message[idx++], 1))
-        {
-            if(read_len == -1)
-                error_handling("read()  error!");
+        for(int i = 0; i<3000; i++)
+            printf("Wait time %d \n", i);
 
-            str_len += read_len;
-        }
+        str_len = read(sock, message, sizeof(message)-1);
+        if(str_len == -1)
+            error_handling("read() error!");
+            
         printf("Message from server: %s \n", message);
         printf("Function read call count: %d \n", str_len);
         close(sock);

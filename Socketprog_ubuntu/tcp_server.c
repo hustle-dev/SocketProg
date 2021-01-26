@@ -43,7 +43,10 @@ int main(int argc, char * argv[])
     if(clnt_sock == -1)
         error_handling("accep() error");
     
-    write(clnt_sock, message, sizeof(message));
+    for(int i = 0; i<10; i++)
+    {
+        write(clnt_sock, message, sizeof(message));
+    }
     close(clnt_sock);
     close(serv_sock);
 }
