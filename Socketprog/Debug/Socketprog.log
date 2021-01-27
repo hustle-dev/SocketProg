@@ -1,2 +1,4 @@
-﻿  hello_server.c
+﻿  conv_addr_win.c
+C:\Users\dlwoa\source\repos\Socketprog\Socketprog\conv_addr_win.c(18,2): warning C4996: 'WSAStringToAddressA': Use WSAStringToAddressW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\dlwoa\source\repos\Socketprog\Socketprog\conv_addr_win.c(21,2): warning C4996: 'WSAAddressToStringA': Use WSAAddressToStringW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   Socketprog.vcxproj -> C:\Users\dlwoa\source\repos\Socketprog\Debug\Socketprog.exe
