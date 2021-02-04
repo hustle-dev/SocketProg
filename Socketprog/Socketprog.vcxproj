@@ -20,6 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="conv_addr_win.c" />
+    <ClCompile Include="echo_client_win.c" />
+    <ClCompile Include="echo_server_win.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
